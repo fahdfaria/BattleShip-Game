@@ -18,15 +18,14 @@ h1{
 .cpyright{
   position: absolute;
   color: white;
-bottom:0;
 right: 0;
-
-margin-top: 1rem;
-margin-right: 1rem;
+margin-top: 2rem;
+padding-bottom: 2rem;
 
 }
 
-.guesses, .hits{
+
+.guesses, #hitsArea, #guessesArea{
 
     font-family: 'Hanalei Fill', cursive;
     font-size: 1.3rem;
@@ -60,15 +59,7 @@ button{
   margin: 0 auto;
 }
 
-#instructions{
-  color: white;
-  border: white solid;
-  width: 25rem;
-  display: block;
-  left: 0;
-  margin-bottom: 1rem;
 
-}
 #board{
   position:relative;
   background-image: url("/images/board.png");
