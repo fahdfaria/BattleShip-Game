@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/script/script.js" charset="utf-8"></script>
+    <title>BattleShip Game</title>
+  </head>
+  <body>
+
+    <h1>Welcome to Battleship</h1>
+    <p class="cpyright">Copyright Fahd Freia /
+    BattleShip Board Idea credits to <a href="https://www.oreilly.com/library/view/head-first-javascript/9781449340124/">Head First JavaScript Programming</a> /
+    BattleShip Animated Gifs created by <a href="https://www.deviantart.com/l3moon-studios/art/Sprite-commission-elmsdor-470387411">L3Moon-Studios</a>
+    </p>
+
+    <div id="statscontainer">
+  <div id="guessesArea"></div>
+  <div id="hitsArea"></div>
+
+    <p id=stats hidden></p>
+  </div>
+
+<div id="board">
+
+
+
+  <!-- <div id="instructions">
+
+    <h2>Instructions</h2>
+    <p>Click on any cell to see if the ship is there! <br>
+      Each cell you click will be saved as a guess <br>
+      Once you reach 18 guesses, the game will display your stats <br>
+      There is 12 ships propagated randomly in the cells! See if you can locate them</p>
+    </div> -->
+
+    <form id="tableForm">
+    <table id="battleTable">
+
+      <tr>
+        <td class="letTd">A</td>
+        <td id="0A" class="hovCells"></td>
+        <td id="1A" class="hovCells"></td>
+        <td id="2A" class="hovCells"></td>
+        <td id="3A" class="hovCells"></td>
+        <td id="4A" class="hovCells"></td>
+        <td id="5A" class="hovCells"></td>
+        <td id="6A" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">B</td>
+        <td id="0B" class="hovCells"></td>
+        <td id="1B" class="hovCells"></td>
+        <td id="2B" class="hovCells"></td>
+        <td id="3B" class="hovCells"></td>
+        <td id="4B" class="hovCells"></td>
+        <td id="5B" class="hovCells"></td>
+        <td id="6B" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">C</td>
+        <td id="0C" class="hovCells"></td>
+        <td id="1C" class="hovCells"></td>
+        <td id="2C" class="hovCells"></td>
+        <td id="3C" class="hovCells"></td>
+        <td id="4C" class="hovCells"></td>
+        <td id="5C" class="hovCells"></td>
+        <td id="6C" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">D</td>
+        <td id="0D" class="hovCells"></td>
+        <td id="1D" class="hovCells"></td>
+        <td id="2D" class="hovCells"></td>
+        <td id="3D" class="hovCells"></td>
+        <td id="4D" class="hovCells"></td>
+        <td id="5D" class="hovCells"></td>
+        <td id="6D" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">E</td>
+        <td id="0E" class="hovCells"></td>
+        <td id="1E" class="hovCells"></td>
+        <td id="2E" class="hovCells"></td>
+        <td id="3E" class="hovCells"></td>
+        <td id="4E" class="hovCells"></td>
+        <td id="5E" class="hovCells"></td>
+        <td id="6E" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">F</td>
+        <td id="0F" class="hovCells"></td>
+        <td id="1F" class="hovCells"></td>
+        <td id="2F" class="hovCells"></td>
+        <td id="3F" class="hovCells"></td>
+        <td id="4F" class="hovCells"></td>
+        <td id="5F" class="hovCells"></td>
+        <td id="6F" class="hovCells"></td>
+      </tr>
+
+      <tr>
+        <td class="letTd">G</td>
+        <td id="0G" class="hovCells"></td>
+        <td id="1G" class="hovCells"></td>
+        <td id="2G" class="hovCells"></td>
+        <td id="3G" class="hovCells"></td>
+        <td id="4G" class="hovCells"></td>
+        <td id="5G" class="hovCells"></td>
+        <td id="6G" class="hovCells"></td>
+      </tr>
+      <tr>
+        <td class="numTd"></td>
+        <td class="numTd">0</td>
+        <td class="numTd">1</td>
+        <td class="numTd">2</td>
+        <td class="numTd">3</td>
+        <td class="numTd">4</td>
+        <td class="numTd">5</td>
+        <td class="numTd">6</td>
+      </tr>
+
+    </table>
+  </form>
+
+
+
+
+</div>
+
+  </body>
+</html>
