@@ -26,7 +26,7 @@ var cells = [
   "0G","1G","2G","3G","4G","5G","6G"
   ];
 
-var locations = randomizer(cells, 8)
+var locations = randomizer(cells, 10)
 
   console.log(locations);
 
@@ -43,8 +43,6 @@ var statscontainer = document.getElementById("statscontainer");
 
 var stats = document.getElementById("stats");
 
-var tableForm = document.getElementById("tableForm");
-
 var hits = 0;
 
 
@@ -57,7 +55,7 @@ $(td).on("click",  function(count) {
 
     clickedTd = this.id;
 
-    if(clickedTd == locations[0] || clickedTd == locations[1] || clickedTd == locations[2] || clickedTd == locations[3] || clickedTd == locations[4] || clickedTd == locations[5] || clickedTd == locations[6] || clickedTd == locations[7]){
+    if(clickedTd == locations[0] || clickedTd == locations[1] || clickedTd == locations[2] || clickedTd == locations[3] || clickedTd == locations[4] || clickedTd == locations[5] || clickedTd == locations[6] || clickedTd == locations[7] || clickedTd == locations[8] || clickedTd == locations[9]){
 
 
     count.target.style.background = "url('./images/blow-up.gif') no-repeat center";
@@ -98,15 +96,19 @@ $(td).on("click",  function(count) {
 
     console.log(guesses.length);
 
-    stats.innerHTML = `you took ${guesses.length} guesses, you hit ${hits} ships, your stats are ${Math.round(((hits - guesses.length)/18 + 1) * 100)}% <br> <button onclick="location.reload()">Restart Game</button>`
+    stats.innerHTML = `You took ${guesses.length} guesses, you hit ${hits} ships, your stats are ${Math.round(((hits - guesses.length)/18 + 1) * 100)}% <br> <button onclick="location.reload()">Restart Game</button>`
 
-    if(guesses.length >= 18){
+    if(guesses.length >= 20){
+
+    console.log(stats);
 
       $(stats).fadeIn( "slow", function() {
 
+        stats.style.display = "block";
+
         for (let i in td) {
 
-      if(td[i].id == locations[0] || td[i].id == locations[1] || td[i].id == locations[2] || td[i].id == locations[3] || td[i].id == locations[4] || td[i].id == locations[5] || td[i].id == locations[6] || td[i].id == locations[7]){
+      if(td[i].id == locations[0] || td[i].id == locations[1] || td[i].id == locations[2] || td[i].id == locations[3] || td[i].id == locations[4] || td[i].id == locations[5] || td[i].id == locations[6] || td[i].id == locations[7] || td[i].id == locations[8] || td[i].id == locations[9]){
 
         td[i].style.background = "url('./images/battleship.gif') no-repeat center";
         td[i].style.border = "6px solid red";
@@ -123,11 +125,13 @@ $(td).on("click",  function(count) {
 
   }
 
-    if(hits == 8 && guesses.length <=18){
+    if(hits === 10 && guesses.length <=20){
 
-      stats.innerHTML = `you took ${guesses.length} guesses, you hit ${hits} ships, your stats are ${Math.round(((hits - guesses.length)/18 + 1) * 100)}% <br> <button onclick="location.reload()">Restart Game</button>`
+      stats.innerHTML = `You took ${guesses.length} guesses, you hit All ${hits} ships, your stats are ${Math.round(((hits - guesses.length)/18 + 1) * 100)}% <br> <button onclick="location.reload()">Restart Game</button>`
 
       $(stats).fadeIn( "slow", function() {
+
+        stats.style.display = "block";
 
         for (let i in td) {
         td[i].id = ""

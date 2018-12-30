@@ -3,11 +3,11 @@ This is my version of the Battleship game. Enjoy! :)
 
 Instructions:
 
-- There is 8 ships propagated randomly across the table.
+- There is 10 ships propagated randomly across the table.
 
-- You have 18 chances to locate all 8 ships.
+- You have 20 chances to locate all 10 ships.
 
-- Once you hit 18 chances, the app will display a stats message and to restart the Game
+- Once you hit 20 chances, the app will display a stats message and to restart the Game
 
 - CHEAT: Location of ships can be viewed in the console ;)
 

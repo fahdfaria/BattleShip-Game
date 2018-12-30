@@ -2,24 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./script/script.js" charset="utf-8"></script>
     <title>BattleShip Game</title>
   </head>
-  <body>
+  <body class="grid-col-12">
 
-    <h1>Welcome to Battleship</h1>
+    <h1 class="grid-col-11">Welcome to Battleship</h1>
 
-    <div id="statscontainer">
+    <div class="grid-col-12" id="statscontainer">
 
-    <p id=stats hidden></p>
-  </div>
-  <div id="guessesArea"><p>Your Guesses</p></div>
-  <div id="hitsArea"><p>Your Hits</p></div>
+    <p class="grid-col-10" id=stats></p>
 
-<div id="board">
+    </div>
+
+  <div id="guessesArea"><p>Your guesses</p></div>
+
+  <div id="hitsArea"><p>Your hits</p></div>
+
+<div class="grid-col-12" id="board">
 
 
 
@@ -32,8 +35,7 @@
       There is 12 ships propagated randomly in the cells! See if you can locate them</p>
     </div> -->
 
-    <form id="tableForm">
-    <table id="battleTable">
+    <table class="grid-col-10" id="battleTable">
 
       <tr>
         <td class="letTd">A</td>
@@ -123,16 +125,13 @@
       </tr>
 
     </table>
-  </form>
-
-
-  <p class="cpyright">Copyright Fahd Freia /
-    BattleShip Board Idea credits to <a href="https://www.oreilly.com/library/view/head-first-javascript/9781449340124/">Head First JavaScript Programming</a> /
-    BattleShip Animated Gifs created by <a href="https://www.deviantart.com/l3moon-studios/art/Sprite-commission-elmsdor-470387411">L3Moon-Studios</a>
-  </p>
 
 
 </div>
+<p class="cpyright grid-col-6">Copyright Fahd Freia /
+  BattleShip Board Idea credits to <a href="https://www.oreilly.com/library/view/head-first-javascript/9781449340124/">Head First JavaScript Programming</a> /
+  BattleShip Animated Gifs created by <a href="https://www.deviantart.com/l3moon-studios/art/Sprite-commission-elmsdor-470387411">L3Moon-Studios</a>
+</p>
 
 
   </body>
